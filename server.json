@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-16/server.schema.json",
-  "name": "io.github.adgentek/adsmcp",
+  "name": "io.github.Adgentek/adsmcp",
   "description": "MCP-native ad server. Monetize AI chatbots and agents with conversational ads.",
   "version": "1.0.0",
   "repository": {
