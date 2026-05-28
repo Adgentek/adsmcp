@@ -2,12 +2,23 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-16/server.schema.json",
   "name": "io.github.Adgentek/adsmcp",
   "description": "MCP-native ad server. Monetize AI chatbots and agents with conversational ads.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "url": "https://github.com/Adgentek/adsmcp",
     "source": "github"
   },
   "remotes": [
-    { "type": "streamable-http", "url": "https://mcp.adgentek.ai/mcp" }
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.adgentek.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for your Adgentek publisher account. Format: 'Bearer YOUR_PUBLISHER_KEY'. Get one at https://adsmcp.ai",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
   ]
 }
