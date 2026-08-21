@@ -200,17 +200,6 @@ const results = await callTool('ads.prefetch', {
 
 ---
 
-### `ads.config`
-
-Returns your publisher configuration. **Takes no parameters** — your identity is derived from the API key in the Authorization header.
-
-```javascript
-const config = await callTool('ads.config', {});
-// Returns: { publisher_id, org_id, ...upstream config }
-```
-
----
-
 ### `ads.diagnostics`
 
 Runs the full ad auction with debug output enabled. Uses the **same parameters** as `ads.serve` (same required fields: `conversationId`, `userKey`, `surface`).
