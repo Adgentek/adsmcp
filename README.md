@@ -200,27 +200,6 @@ const results = await callTool('ads.prefetch', {
 
 ---
 
-### `ads.diagnostics`
-
-Runs the full ad auction with debug output enabled. Uses the **same parameters** as `ads.serve` (same required fields: `conversationId`, `userKey`, `surface`).
-
-Returns the raw auction debug data including eligibility checks and match details.
-
-```javascript
-const diag = await callTool('ads.diagnostics', {
-  conversationId: 'debug_abc123',
-  userKey:        'user_456',
-  surface:        'conversational',
-  messages: [
-    { role: "user", content: "Tell me about electric vehicles" }
-  ]
-});
-
-console.log(diag); // Full debug output from the auction engine
-```
-
----
-
 ## Ad Response Format
 
 When `ads.serve` returns a matched ad:
